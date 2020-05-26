@@ -155,6 +155,41 @@ problem9 = () => {
 };
 
 /************************************************************* */
-// Bonus Assignment: Create 4 mathematical function expressions, add,subtract,multiply,divide.  put them in an array, and create a doMath() function that randomly does one of the 4 operations whenever it is run.  the doMath() function should print out what mathetmatical function was carried out.  The doMath() function should return the computed value of any operation performed.
-const operations = [];
-function doMath() {}
+// Bonus Assignment: Create 4 mathematical function expressions, add,subtract,multiply,divide.
+// Put them in an array, and create a doMath() function that randomly does one of the 4 operations whenever it is run.
+//  the doMath() function should print out what mathematical function was carried out.
+//  The doMath() function should return the computed value of any operation performed.
+const operations = ["add", "subtract", "multiply", "divide"];
+
+function doMath(random, x, y) {
+    switch (random) {
+      case 0:
+        console.log(operations[random]);
+        var value=x+y;
+        console.log(value);
+        break;
+      case 1:
+        console.log(operations[random]);
+        var value=x-y;
+        console.log(value);
+        break;
+      case 2:
+        console.log(operations[random]);
+        var value=x*y;
+        console.log(value);
+        break;
+      case 3:
+        console.log(operations[random]);
+        var value=x/y;
+        console.log(value);
+        break;
+      default:
+      console.log("error");
+      break;
+    }
+  }
+  
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+}

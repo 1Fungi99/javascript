@@ -192,4 +192,3 @@ function doMath(random, x, y) {
   function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
-}
